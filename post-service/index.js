@@ -18,7 +18,7 @@ app.set("port", process.env.PORT);
 app.use("/", routes);
 
 mongoose.connect(
-  "mongodb://post-db/db",
+  process.env.POSTDB_URI,
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err) => {
     if (err) throw err;
