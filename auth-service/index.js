@@ -10,7 +10,7 @@ var app = express();
 
 app.use(cors());
 
-app.set("port", process.env.PORT);
+app.set("port", process.env.$PORT);
 
 app.use(morgan("tiny"));
 
