@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(morgan("tiny"));
 
-app.set("port", process.env.$PORT);
+app.set("port", process.env.PORT);
 
 app.use("/", routes);
 
