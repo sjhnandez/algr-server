@@ -1,4 +1,0 @@
-build:
-  docker:
-    post-service: post-service/Dockerfile
-    auth-service: auth-service/Dockerfile
